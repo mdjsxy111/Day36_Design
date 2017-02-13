@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qf.sxy.day36_design">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TextInputLayoutActivity" />
+        <activity android:name=".FlotingActionButtonActivity" />
+        <activity android:name=".SnackBarActivity" />
+        <activity android:name=".NavigationViewActivity" />
+        <activity android:name=".ToolbarActivity" />
+        <activity android:name=".ToolBar2Activity" />
+        <activity android:name=".TabLayoutActivity" />
+        <activity android:name=".NestedScrollViewActivity" />
+        <activity android:name=".AppBarLayoutActivity" />
+        <activity android:name=".CollapsingToolbarLayoutActivity"></activity>
+    </application>
+
+</manifest>

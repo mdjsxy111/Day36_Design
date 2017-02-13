@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.qf.sxy.day36_design.ToolBar2Activity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:logo="@mipmap/ic_launcher"
+        app:navigationIcon="@mipmap/d_doge"
+        app:title="123"
+        app:subtitle="456"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义菜单"/>
+
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--内容区域-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#ff0000"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+        <!--菜单区域-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#0000ff"
+            android:layout_gravity="left"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

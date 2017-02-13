@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.sxy.day36_design.AppBarLayoutActivity">
+
+
+    <!--
+     app:layout_scrollFlags="enterAlways"
+     让Toolbar和滑动组件一起滑动
+
+     scroll:如果想滑动出屏幕  需要设置scroll
+     enterAlways:向上滑动  出去    向下滑动  出来
+     enterAlwaysCollapsed:向上滑动 出去  向下滑动 所有数据全部出来  他才出现
+
+exitUntilCollapsed:结合minHeight使用
+向上滑动  保留最小的高度
+向下滑动 所有数据出来他才出现
+
+    -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <!--
+         app:contentScrim="#00ff00"设置Toolbar的颜色
+            app:expandedTitleGravity="bottom|right"  标题的位置
+            app:expandedTitleMargin="@dimen/activity_horizontal_margin"标题的外边距
+        -->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="10dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="#00ff00"
+            app:expandedTitleGravity="bottom|left"
+            app:expandedTitleMargin="@dimen/activity_horizontal_margin"
+
+            >
+            <!--
+            app:layout_collapseParallaxMultiplier="0.8" 视差因子  0跟着往上动     1不动
+                app:layout_collapseMode=""   视差模式
+                pin:固定模式
+                parallax:折叠模式  会有视差折叠的效果
+
+            -->
+            <ImageView
+                app:layout_collapseParallaxMultiplier="1"
+                app:layout_collapseMode="pin"
+                android:src="@mipmap/bb"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:title="标题"
+                >
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--
+     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+     让NestedScrollView展示到Toolbar下面
+    -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+           <TextView
+               android:gravity="center"
+               android:text="aaaaaa"
+               android:layout_width="match_parent"
+               android:layout_height="300dp" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

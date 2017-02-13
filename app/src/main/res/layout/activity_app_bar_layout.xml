@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.qf.sxy.day36_design.AppBarLayoutActivity">
+
+
+    <!--
+     app:layout_scrollFlags="enterAlways"
+     让Toolbar和滑动组件一起滑动
+
+     scroll:如果想滑动出屏幕  需要设置scroll
+     enterAlways:向上滑动  出去    向下滑动  出来
+     enterAlwaysCollapsed:向上滑动 出去  向下滑动 所有数据全部出来  他才出现
+
+exitUntilCollapsed:结合minHeight使用
+向上滑动  保留最小的高度
+向下滑动 所有数据出来他才出现
+
+    -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <android.support.v7.widget.Toolbar
+            android:minHeight="10dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:background="#0000ff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--
+     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+     让NestedScrollView展示到Toolbar下面
+    -->
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@mipmap/aa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <ImageView
+                android:src="@mipmap/aa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <ImageView
+                android:src="@mipmap/aa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <ImageView
+                android:src="@mipmap/aa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <ImageView
+                android:src="@mipmap/aa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <ImageView
+                android:src="@mipmap/aa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <ImageView
+                android:src="@mipmap/aa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <ImageView
+                android:src="@mipmap/aa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <ImageView
+                android:src="@mipmap/aa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <ImageView
+                android:src="@mipmap/aa"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
